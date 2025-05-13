@@ -3,10 +3,11 @@ import { AnimatedGradientText } from "@/components/magicui/animated-gradient-tex
 import { Star } from "lucide-react";
 import UserInput from "@/components/home/UserInput";
 import Output from "@/components/home/Output";
+import { BioProvider } from "@/context/BioContext";
 
 export default function Home() {
   return (
-    <main className="relative grid grid-cols-2 gap-12 p-24">
+    <main className="relative grid grid-cols-1 sm:grid-cols-2 gap-12 px-4 py-12 sm:py-16 sm:px-8 md:px-10 p-24">
       <div className="col-span-full w-full flex flex-col items-center justify-center space-y-4 mb-4 text-center">
         <Link href="https://github.com" target="_blank" className=" mb-4">
           <AnimatedGradientText className="px-6 py-2 flex border-2 border-gray-200 rounded-lg">
@@ -15,12 +16,18 @@ export default function Home() {
             Stars on Github
           </AnimatedGradientText>
         </Link>
-        <h1 className="font-extrabold text-7xl text-center w-full lg:w-[90%] uppercase">CRAFT THE PERFECT TWITTER BIO IN SECONDS!</h1>
-        <p className="text-lg text-amber-700">Just answer a few questions, and we&apos;ll generate a Twitter bio for you.</p>
+        <h1 className="font-extrabold text-7xl text-center w-full lg:w-[90%] uppercase">
+          CRAFT THE PERFECT TWITTER BIO IN SECONDS!
+        </h1>
+        <p className="text-lg text-amber-700">
+          Just answer a few questions, and we&apos;ll generate a Twitter bio for
+          you.
+        </p>
       </div>
-      <UserInput />
-  
-      <Output/>
+      <BioProvider>
+        <UserInput />
+        <Output />
+      </BioProvider>
     </main>
   );
 }
