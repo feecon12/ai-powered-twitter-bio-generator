@@ -14,16 +14,27 @@ A fun and functional web app that generates creative, personalized Twitter bios 
 
 - **Frontend:** React, Tailwind CSS, Framer Motion
 - **AI Models:** LLaMA 3, Mixtral (via OpenAI API)
-- **Hosting:** [Add platform if deployed]
+- **Hosting:** [(https://ai-powered-twitter-bio-generator-black.vercel.app/)]
 
 ## 📸 Preview
 
-![Preview Screenshot](./ai-powered-twitter-bio-generator.png) <!-- Optional: Replace with actual screenshot path -->
+![Preview Screenshot](/public/ai-powered-twitter-bio-generator.png) <!-- Optional: Replace with actual screenshot path -->
 
 ## 📦 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ai-twitter-bio-generator.git
-cd ai-twitter-bio-generator
+git clone https://github.com/feecon12/ai-powered-twitter-bio-generator.git
+cd ai-powered-twitter-bio-generator
+```
+### 2. Install Dependencies
+``` bash
+npm install
+npm run dev
+```
+### 3. Add environment variables
+- Get your API key from https://console.groq.com/keys
+```bash
+GROQ_API_KEY=your-api-key-from-groq
+```
