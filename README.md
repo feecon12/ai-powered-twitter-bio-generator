@@ -20,21 +20,4 @@ A fun and functional web app that generates creative, personalized Twitter bios 
 
 ![Preview Screenshot](/public/ai-powered-twitter-bio-generator.png) <!-- Optional: Replace with actual screenshot path -->
 
-## 📦 Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/feecon12/ai-powered-twitter-bio-generator.git
-cd ai-powered-twitter-bio-generator
-```
-### 2. Install Dependencies
-``` bash
-npm install
-npm run dev
-```
-### 3. Add environment variables
-- Get your API key from https://console.groq.com/keys
-```bash
-GROQ_API_KEY=your-api-key-from-groq
-```
